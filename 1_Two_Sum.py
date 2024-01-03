@@ -5,9 +5,14 @@ def twoSum(nums, target):
             if nums[i] + nums[j] ==target:
                 return i,j
             
-            
-nums = [2,7,11,15]
-target = 9
 
-x = twoSum(nums,target)
-print(x)
+def two_sum(nums, target):
+    hash = {}
+
+    for i in range(len(nums)):
+        difference = target - nums[i]
+        if difference in hash:
+            return [hash[difference],i]
+        else:
+            hash[nums[i]] = i
+
