@@ -11,5 +11,3 @@ def mySqrt(x):
     
 mySqrt(x)    
 
-#runs on leetcode! 
-#took 3 days to figure out
